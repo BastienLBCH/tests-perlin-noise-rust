@@ -1,8 +1,7 @@
-use std::arch::aarch64::int64x1_t;
 use image::{ImageBuffer, RgbImage};
 use rand::seq::SliceRandom;
 use std::f64::consts::SQRT_2;
-use rand::{Rng, thread_rng};
+use rand::thread_rng;
 
 const UNIT: f64 = 1.0/SQRT_2;
 const SMOOTHING_FUNCTION: SmoothingFunctions = SmoothingFunctions::Smooth;
